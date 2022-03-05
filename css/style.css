@@ -85,6 +85,7 @@
 
 .pageTwoForm {
   border: 1px solid #F45B0F;
+  position: absolute;
   border-radius: 1rem;
   width: 50vw;
   height: 55vh;
@@ -94,23 +95,68 @@
   background: linear-gradient(179.97deg, rgba(255, 255, 255, 0.6) 0.03%, rgba(255, 255, 255, 0.4) 99.97%);
 
 }
-input[type=date],input[type=date]:focus{
+
+input[type=date],
+input[type=date]:focus {
   border-color: #F45B0F !important;
 }
-input[type=radio]{
-  margin-right:.5rem
+
+input[type=radio] {
+  margin-right: .5rem
 }
-.birthdateText{
+
+.birthdateText {
   letter-spacing: 2px;
 }
-.form-check-input[type='radio']{
+
+.form-check-input[type='radio'] {
 
   border: 2px solid #F45B0F;
-  }
-  .form-check-input:checked {
-      background-color: #F45B0F;
-      border-color: #F45B0F;
-  }
+}
+
+.form-check-input:checked {
+  background-color: #F45B0F;
+  border-color: #F45B0F;
+}
+
+.response {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.backarrow img {
+  height: 7vh;
+  margin-top: .5rem;
+
+}
+
+.exit {
+  position: absolute;
+  top: 2vh;
+  right: 2vw;
+  height: 2vh;
+
+}
+
+.pageTwobtn {
+  width: 10rem;
+  /* align-self: center; */
+
+}
+
+.pageTwobtnDiv {
+  width: inherit;
+
+}
+
+.pageTwobtnP {
+  display: flex;
+  justify-content: center;
+}
+
 @media only screen and (max-width:600px) {
   .icon1 {
     display: none;
