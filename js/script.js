@@ -7,12 +7,14 @@ var pageThree=document.getElementById('pageThree');
 var fullPageTwo=document.getElementById('fullPageTwo');
 
 akangenerator.addEventListener('click',AkanEvent);
-pageTwo.addEventListener('submit',FormEvent);
+pageTwo.addEventListener('submit',formEvent);
 
-formEvent=(e)=>{
-  e.preventDefault();
- 
-
+function formEvent(e){
+    e.preventDefault();
+    pageOne.style.display='none';
+    pageTwo.style.display='none';
+    pageThree.style.display='initial'
+    
   
 }
 function AkanEvent(e){
