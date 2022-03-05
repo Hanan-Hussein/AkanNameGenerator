@@ -90,6 +90,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(179.97deg, rgba(255, 255, 255, 0.6) 0.03%, rgba(255, 255, 255, 0.4) 99.97%);
+
 }
 
 @media only screen and (max-width:600px) {
