@@ -13,7 +13,8 @@
 
 <body>
   <div class="bg">
-    <div class="container   generator ">
+    <!-- container 1 -->
+    <div class="container   generator d-none ">
       <p class="akanTitle mb-5 no-wrap ">Akan Name Generator</p>
       <p class="description">
         The Akan people of Ghana frequently name their children after the day of the week they were born and the order
@@ -35,14 +36,35 @@
       <!-- <div style=" width: 200px; height: 200px; "class=" mx-auto">
       <img src="./assets/jaffar.jpg" height="100" alt="">
     </div> -->
-    </div>
     <img src="./assets/svg1.svg" alt="" class="icon1">
+
+    </div>
     <img src="./assets/svg2.svg" class="icon2 img-responsive" alt="">
     <img src=" ./assets/svg4.svg" class="icon4  img-responsive" alt="">
     <img src=" ./assets/svg3.svg" alt="" class="icon3 img-responsive">
 
-    <div class="container">
+    <!-- container 3 -->
+    <div class="container pageTwo">
+     <div class="pageTwoForm">
+      <form class="" >
+        <div>
+          <label for="birthdate">Enter Birthdate</label>
+        </div>
+        <!-- <div> -->
+          <input type="date" form-control>
+        <!-- </div> -->
+        <div class="genderLabel">
+          <label for="Gender">Select your Gender</label>
+        </div>
+        <div class="male mb-4">
+          <input type="radio" name="gender" id="male" name="male"  value="male"> MALE
+        </div>
+        <div class="female">
+          <input type="radio" name="gender" id="female" name="female" value="female">FEMALE
 
+        </div>
+      </form>
+     </div>
     </div>
   </div>
 
