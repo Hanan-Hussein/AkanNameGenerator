@@ -85,15 +85,32 @@
 
 .pageTwoForm {
   border: 1px solid #F45B0F;
+  border-radius: 1rem;
   width: 50vw;
-  height: 50vh;
+  height: 55vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background: linear-gradient(179.97deg, rgba(255, 255, 255, 0.6) 0.03%, rgba(255, 255, 255, 0.4) 99.97%);
 
 }
+input[type=date],input[type=date]:focus{
+  border-color: #F45B0F !important;
+}
+input[type=radio]{
+  margin-right:.5rem
+}
+.birthdateText{
+  letter-spacing: 2px;
+}
+.form-check-input[type='radio']{
 
+  border: 2px solid #F45B0F;
+  }
+  .form-check-input:checked {
+      background-color: #F45B0F;
+      border-color: #F45B0F;
+  }
 @media only screen and (max-width:600px) {
   .icon1 {
     display: none;
