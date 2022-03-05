@@ -157,6 +157,7 @@ input[type=radio] {
   justify-content: center;
 }
 
+
 @media only screen and (max-width:600px) {
   .icon1 {
     display: none;
