@@ -125,6 +125,7 @@ input[type=radio] {
   justify-content: center;
   align-items: center;
   align-content: center;
+  
 }
 
 .backarrow img {
@@ -157,7 +158,9 @@ input[type=radio] {
   justify-content: center;
 }
 
-
+#pageThree,#fullPageTwo,#pagetwo{
+  display: none;
+}
 @media only screen and (max-width:600px) {
   .icon1 {
     display: none;
