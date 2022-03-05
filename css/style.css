@@ -64,3 +64,29 @@
     left: 0;
     top: 0;
   }
+  @media only screen and (max-width:600px){
+    .icon1{
+      display:none;
+    }
+    .icon4{
+      height: 7%;
+    }
+    .icon3,.icon2{
+      height: 5%;
+    }
+    
+  
+  }
+  @media only screen and (max-width:1024px){
+  .icon1{
+    height: 40%;
+  }
+  }
+
+  /* exception for iphone se screens */
+  @media only screen and (width:375px) and (height:667px){
+
+  .generator{
+    height: auto;
+  }
+}
