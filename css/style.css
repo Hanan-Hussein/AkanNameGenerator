@@ -157,6 +157,10 @@ input[type=radio] {
   display: flex;
   justify-content: center;
 }
+#exit,#back{
+  cursor: pointer;
+
+}
 
 #pageThree,#fullPageTwo,#pagetwo{
   display: none;
