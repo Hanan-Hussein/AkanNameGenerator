@@ -5,9 +5,11 @@ var pageOne=document.getElementById('pageOne');
 var pageTwo=document.getElementById('pagetwo');
 var pageThree=document.getElementById('pageThree');
 var fullPageTwo=document.getElementById('fullPageTwo');
+var back=document.getElementById('back');
 
 akangenerator.addEventListener('click',AkanEvent);
 pageTwo.addEventListener('submit',formEvent);
+back.addEventListener('click',backEvent);
 
 function formEvent(e){
     e.preventDefault();
@@ -24,5 +26,10 @@ function AkanEvent(e){
   pageTwo.style.display='initial';
   fullPageTwo.style.display='initial';
 
-
+}
+function backEvent (e){
+  e.preventDefault();
+  pageThree.style.display='none';
+  pageTwo.style.display='initial';
+  fullPageTwo.style.display='initial';
 }
