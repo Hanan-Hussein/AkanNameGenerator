@@ -29,6 +29,7 @@ function formEvent(e) {
   pageOne.style.display = 'none';
   pageTwo.style.display = 'none';
   pageThree.style.display = 'initial'
+  pageTwo.reset();
 
 
 }
