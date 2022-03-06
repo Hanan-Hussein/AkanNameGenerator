@@ -11,9 +11,10 @@
 ## Table of Content
 
 + [Description](#description)
-+ [Installation Requirement](#Requirements)
++ [Behaviour Driven Development](#behaviour-driven-development)
++ [Requirement](#requirement)
 + [Technology Used](#technology-used)
-+ [Authors Info](#Authors-Info)
++ [Authors Info](#authors-info)
 
 
 ## Description
@@ -25,12 +26,15 @@ The live link is below:
 
 # [LIVE LINK](https://hanan-hussein.github.io/AkanNameGenerator/)
 
-
+## Behaviour Driven Development
+* press generate akan name which redirects to the form page
+* input the birth date and your gender, if not an alert message is displayed.
+* If the form is successfully submitted user is redirected to the output which contains the akan Name
 ## Installation
 * Clone the github repo
 * Open the clone in a texteditor and host it on your browser
 
-### Requirements
+### Requirement
 
 * Either a computer,phone,tablet or an Ipad
 
