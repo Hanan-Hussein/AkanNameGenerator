@@ -39,7 +39,6 @@
 
 }
 
-.btn-outline-danger:hover {}
 
 .bg {
   background: linear-gradient(150deg, rgba(244, 91, 15, 0.7) 19%, rgba(248, 153, 19, 0.66) 63%, rgba(252, 209, 22, 0.37) 100%);
@@ -72,7 +71,18 @@
   left: 0;
   top: 0;
 }
-
+.shape{
+  height:20vh;
+  position: absolute;
+  left: -8vw;
+  top:-3vw;
+}
+.shape1{
+  position: absolute;
+  height: 15vh;
+  bottom:0vw;
+  right:-2vw;
+}
 .pageTwo {
   height: 100vh;
   display: flex;
@@ -100,7 +110,10 @@ input[type=date],
 input[type=date]:focus {
   border-color: #F45B0F !important;
 }
-
+::selection{
+  color:#F45B0F;
+  background:#006B3F;
+}
 input[type=radio] {
   margin-right: .5rem
 }
@@ -115,8 +128,12 @@ input[type=radio] {
 }
 
 .form-check-input:checked {
-  background-color: #F45B0F;
-  border-color: #F45B0F;
+  background-color: #F45B0F !important;
+  border: none;
+  /* border-color: #F45B0F; */
+}
+.form-check-input:focus, .form-check-input:active{
+  box-shadow: none !important;
 }
 
 .response {
@@ -169,6 +186,11 @@ input[type=radio] {
 #pageThree,#fullPageTwo,#pagetwo{
   display: none;
 }
+.btn-outline-danger:hover:active:focus{
+  box-shadow: none;
+  background-color: #D62828;
+}
+
 @media only screen and (max-width:600px) {
   .icon1 {
     display: none;
@@ -182,13 +204,29 @@ input[type=radio] {
   .icon2 {
     height: 5%;
   }
+  .pageTwoForm{
+    width: 80vw;
+    height: 75vh;
 
-
+  }
+  .shape{
+    height: 10vh;
+  }
+  .shape1{
+    height: 7vh;
+  }
+  .generator {
+    height: auto;
+  }
 }
 
 @media only screen and (max-width:1024px) {
   .icon1 {
     height: 40%;
+  }
+  .pageTwoForm{
+    height: 70vh;
+
   }
 }
 
