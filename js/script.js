@@ -8,6 +8,7 @@ var fullPageTwo = document.getElementById('fullPageTwo');
 var back = document.getElementById('back');
 var exit = document.getElementById('exit');
 var dates = document.getElementById('dates');
+var output = document.getElementById('output');
 
 akangenerator.addEventListener('click', AkanEvent);
 pageTwo.addEventListener('submit', formEvent);
@@ -21,11 +22,13 @@ function formEvent(e) {
   if (dates.value === "") {
     alert("Please input a birth date");
     return;
-  } else if (gender()=="") {
+  } else if (gender() == "") {
     alert("Please input a gender");
     return;
   }
-  console.log(day());
+  var dayVal = day(dates.value)
+  var akan = names(dayVal, gender()).toUpperCase();
+  output.textContent = akan;
   pageOne.style.display = 'none';
   pageTwo.style.display = 'none';
   pageThree.style.display = 'initial'
@@ -33,16 +36,26 @@ function formEvent(e) {
 
 
 }
-var gender=()=>{
+var gender = () => {
   return pageTwo.gender.value;
 }
-var day=(newDate)=>{
-  newDate=new Date(dates.value);
-  newDate=newDate.getDay();
-  return newDate;
+var day = (newDate) => {
+  var day = new Date(newDate);
+  day = day.getDay();
+  return day;
 
 }
+var names = (day, genders) => {
+  let maleNames = ['kwasi', 'kwadow', 'kwabena', 'kwaku', 'yaw', 'kofi', 'kwame'];
+  let femaleNames = ['Akosua', 'Adwoa', 'Abenna', 'Akua', 'Yaa', 'Afua', 'Ama'];
 
+
+  if (genders === 'male') {
+    return maleNames[day];
+  } else if (genders === 'female') {
+    return femaleNames[day];
+  }
+}
 
 function AkanEvent(e) {
   e.preventDefault();
