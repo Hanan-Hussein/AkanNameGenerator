@@ -161,6 +161,10 @@ input[type=radio] {
   cursor: pointer;
 
 }
+#output{
+  color: #006B3F;
+}
+
 
 #pageThree,#fullPageTwo,#pagetwo{
   display: none;
