@@ -7,7 +7,7 @@ var pageThree = document.getElementById('pageThree');
 var fullPageTwo = document.getElementById('fullPageTwo');
 var back = document.getElementById('back');
 var exit = document.getElementById('exit');
-var dates = document.getElementById('dates')
+var dates = document.getElementById('dates');
 
 akangenerator.addEventListener('click', AkanEvent);
 pageTwo.addEventListener('submit', formEvent);
@@ -21,11 +21,11 @@ function formEvent(e) {
   if (dates.value === "") {
     alert("Please input a birth date");
     return;
-  } else if (pageTwo.gender.value === "") {
+  } else if (gender()=="") {
     alert("Please input a gender");
     return;
   }
-
+  console.log(day());
   pageOne.style.display = 'none';
   pageTwo.style.display = 'none';
   pageThree.style.display = 'initial'
@@ -36,6 +36,13 @@ function formEvent(e) {
 var gender=()=>{
   return pageTwo.gender.value;
 }
+var day=(newDate)=>{
+  newDate=new Date(dates.value);
+  newDate=newDate.getDay();
+  return newDate;
+
+}
+
 
 function AkanEvent(e) {
   e.preventDefault();
