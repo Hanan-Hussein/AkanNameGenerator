@@ -1,4 +1,4 @@
-# PERSONAL PORTFOLIO
+# Akan Name Generator
 ##### By Hanan Hussein Ibrahim
 
 
