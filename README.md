@@ -58,5 +58,5 @@ Can be reached by the email below for questions and comments
 
 [Go Back to the top](#By-Hanan-Hussein-Ibrahim)
 ## License
-Find the license information [here](https://github.com/Hanan-Hussein/MyPortfolio/blob/master/LICENSE) 
+Find the license information [here](https://github.com/Hanan-Hussein/AkanNameGenerator/blob/master/LICENSE) 
 
